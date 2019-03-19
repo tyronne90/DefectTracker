@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet" />
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="mdbselect/getmdl-select.min.css" />
+    <link rel="stylesheet" href="mdbselect/material.min.css" />
+  </head>
+
+  <body>
+    <!-- Start your project here-->
+    <form class="md-form" style="color: #757575;">
+      <div class="container">
+        <div class="row">
+          <div class="d-flex" id="addDefectHeadLine">
+            <addHeadCenter class="addDefectCenter"> <i class="fa fa-bug"/></i> &nbsp; Add Defect </addHeadCenter>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <div class="md-form">
+              <input
+                type="text"
+                id="inputDefectId"
+                class="form-control"
+                readonly="true"
+              />
+              <label for="inputDefectId">Defect ID</label>
+            </div>
+          </div>
+
+          <div class="col-sm">
+            <div class="md-form">
+              <div
+                class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select"
+              >
+                <input
+                  class="mdl-textfield__input"
+                  type="text"
+                  id="module"
+                  value="Select Module"
+                  readonly
+                  tabIndex="-1"
+                />
+                <label for="module" class="lblClass" style="top:90%">
+                  <i class="mdl-icon-toggle__label material-icons"
+                    >keyboard_arrow_down</i
+                  >
+                </label>
+                <label class="mdl-textfield__label">Module</label>
+                <ul
+                  for="module"
+                  class="mdl-menu mdl-menu--bottom-left mdl-js-menu"
+                >
+                  <li class="mdl-menu__item">Module 1</li>
+                  <li class="mdl-menu__item">Module 2</li>
+                  <li class="mdl-menu__item">Module 3</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm">
+            <div class="md-form">
+              <div
+                class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select"
+              >
+                <input
+                  class="mdl-textfield__input"
+                  type="text"
+                  id="sample3"
+                  value="Select Severity"
+                  readonly
+                  tabIndex="-1"
+                />
+                <label for="sample3" class="lblClass" style="top:90%">
+                  <i class="mdl-icon-toggle__label material-icons"
+                    >keyboard_arrow_down</i
+                  >
+                </label>
+                <label class="mdl-textfield__label">Severity</label>
+                <ul
+                  for="sample3"
+                  class="mdl-menu mdl-menu--bottom-left mdl-js-menu"
+                >
+                  <li class="mdl-menu__item">High</li>
+                  <li class="mdl-menu__item">Low</li>
+                  <li class="mdl-menu__item">Medium</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <div class="md-form">
+              <label for="descriptionTextArea" id="textAreaStyle"
+                >Defect Description</label
+              >
+              <textarea
+                class="form-control rounded-0"
+                id="descriptionTextArea"
+                rows="3"
+              ></textarea>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="md-form">
+              <label for="descriptionTextArea" id="textAreaStyle"
+                >Steps to Re-Create</label
+              >
+              <textarea
+                class="form-control rounded-0"
+                id="descriptionTextArea"
+                rows="3"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <div class="md-form">
+              <div
+                class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select"
+              >
+                <input
+                  class="mdl-textfield__input"
+                  type="text"
+                  id="defectType"
+                  value="Select Defect Type"
+                  readonly
+                  tabIndex="-1"
+                />
+                <label for="defectType" class="lblClass" style="top:90%">
+                  <i class="mdl-icon-toggle__label material-icons"
+                    >keyboard_arrow_down</i
+                  >
+                </label>
+                <label class="mdl-textfield__label">Defect Type</label>
+                <ul
+                  for="defectType"
+                  class="mdl-menu mdl-menu--bottom-left mdl-js-menu"
+                >
+                  <li class="mdl-menu__item">UI</li>
+                  <li class="mdl-menu__item">Functionality</li>
+                  <li class="mdl-menu__item">Enhancement</li>
+                  <li class="mdl-menu__item">Performance</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm">
+            <div class="md-form">
+              <div
+                class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select"
+              >
+                <input
+                  class="mdl-textfield__input"
+                  type="text"
+                  id="priority"
+                  value="Select Priority"
+                  readonly
+                  tabIndex="-1"
+                />
+                <label for="priority" class="lblClass" style="top:90%">
+                  <i class="mdl-icon-toggle__label material-icons"
+                    >keyboard_arrow_down</i
+                  >
+                </label>
+                <label class="mdl-textfield__label">Priority</label>
+                <ul
+                  for="priority"
+                  class="mdl-menu mdl-menu--bottom-left mdl-js-menu"
+                >
+                  <li class="mdl-menu__item">High</li>
+                  <li class="mdl-menu__item">Low</li>
+                  <li class="mdl-menu__item">Medium</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm">
+            <div class="md-form">
+              <div
+                class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select"
+              >
+                <input
+                  class="mdl-textfield__input"
+                  type="text"
+                  id="status"
+                  value="Select Status"
+                  readonly
+                  tabIndex="-1"
+                />
+                <label for="status" class="lblClass" style="top:90%">
+                  <i class="mdl-icon-toggle__label material-icons"
+                    >keyboard_arrow_down</i
+                  >
+                </label>
+                <label class="mdl-textfield__label">Status</label>
+                <ul
+                  for="status"
+                  class="mdl-menu mdl-menu--bottom-left mdl-js-menu"
+                >
+                  <li class="mdl-menu__item">New</li>
+                  <li class="mdl-menu__item">Open</li>
+                  <li class="mdl-menu__item">Fixed</li>
+                  <li class="mdl-menu__item">Closed</li>
+                  <li class="mdl-menu__item">Reopened</li>
+                  <li class="mdl-menu__item">Rejected</li>
+                  <li class="mdl-menu__item">deferred</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <div class="md-form">
+              <div
+                class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select"
+              >
+                <input
+                  class="mdl-textfield__input"
+                  type="text"
+                  id="assignedTo"
+                  value="Select Assigned Person"
+                  readonly
+                  tabIndex="-1"
+                />
+                <label for="assignedTo" class="lblClass" style="top:90%">
+                  <i class="mdl-icon-toggle__label material-icons"
+                    >keyboard_arrow_down</i
+                  >
+                </label>
+                <label class="mdl-textfield__label">Assigned Person</label>
+                <ul
+                  for="assignedTo"
+                  class="mdl-menu mdl-menu--bottom-left mdl-js-menu"
+                >
+                  <li class="mdl-menu__item">Person1</li>
+                  <li class="mdl-menu__item">Person2</li>
+                  <li class="mdl-menu__item">Person3</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="md-form">
+              <input type="text" id="inputAvailavleIn" class="form-control" />
+              <label for="inputAvailavleIn">Available In</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg">
+            <div class="md-form">
+              <label for="commentsTextArea" id="textAreaStyle"
+                >Comments..</label
+              >
+              <textarea
+                class="form-control rounded-0"
+                id="commentsTextArea"
+                rows="3"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="row butttonAlignRight">
+          <button class="btn btn-clear">
+            <i class="fas fa-magic mr-1"></i> Clear
+          </button>
+          <button class="btn btn-primary">
+            <i class="fa fa-paper-plane"></i> &nbsp; Submit
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col">
+          <canvas id="doughnutChart"></canvas>
+        </div>
+        <div class="col">
+          <canvas id="pieChart"></canvas>
+        </div>
+        <div class="col">
+          <a
+            class="btn btn-dark-green"
+            data-toggle="popover-hover"
+            data-img="//placehold.it/100x50"
+            >Hover over me</a
+          >
+        </div> 
+      </div>
+    </div>-->
+
+    <!-- /Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="mdbselect/material.min.js"></script>
+    <script src="mdbselect/getmdl-select.min.js"></script>
+  </body>
+</html>
