@@ -1,343 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Material Design Bootstrap</title>
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet" />
-    <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="mdbselect/getmdl-select.min.css" />
-    <link rel="stylesheet" href="mdbselect/material.min.css" />
-  </head>
 
-  <body>
-    <!-- Start your project here-->
-    <form class="md-form" style="color: #757575;">
-      <div class="container">
-        <div class="row">
-          <div class="d-flex" id="addDefectHeadLine">
-            <addHeadCenter class="addDefectCenter"> <i class="fa fa-bug"/></i> &nbsp; Add Defect </addHeadCenter>
-          </div>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-        <div class="row">
-          <div class="col-sm">
-            <div class="md-form">
-              <input
-                type="text"
-                id="inputDefectId"
-                class="form-control"
-                readonly="true"
-              />
-              <label for="inputDefectId">Defect ID</label>
-            </div>
-          </div>
+<body class="fixed-sn">
+  <!--Main Navigation-->
+  <header>
 
-          <div class="col-sm">
-            <div class="md-form">
-              <div
-                class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select"
-              >
-                <input
-                  class="mdl-textfield__input"
-                  type="text"
-                  id="module"
-                  value="Select Module"
-                  readonly
-                  tabIndex="-1"
-                />
-                <label for="module" class="lblClass" style="top:90%">
-                  <i class="mdl-icon-toggle__label material-icons"
-                    >keyboard_arrow_down</i
-                  >
-                </label>
-                <label class="mdl-textfield__label">Module</label>
-                <ul
-                  for="module"
-                  class="mdl-menu mdl-menu--bottom-left mdl-js-menu"
-                >
-                  <li class="mdl-menu__item">Module 1</li>
-                  <li class="mdl-menu__item">Module 2</li>
-                  <li class="mdl-menu__item">Module 3</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark indigo double-nav">
 
-          <div class="col-sm">
-            <div class="md-form">
-              <div
-                class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select"
-              >
-                <input
-                  class="mdl-textfield__input"
-                  type="text"
-                  id="sample3"
-                  value="Select Severity"
-                  readonly
-                  tabIndex="-1"
-                />
-                <label for="sample3" class="lblClass" style="top:90%">
-                  <i class="mdl-icon-toggle__label material-icons"
-                    >keyboard_arrow_down</i
-                  >
-                </label>
-                <label class="mdl-textfield__label">Severity</label>
-                <ul
-                  for="sample3"
-                  class="mdl-menu mdl-menu--bottom-left mdl-js-menu"
-                >
-                  <li class="mdl-menu__item">High</li>
-                  <li class="mdl-menu__item">Low</li>
-                  <li class="mdl-menu__item">Medium</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#">Navbar</a>
 
-        <div class="row">
-          <div class="col-4">
-            <div class="md-form">
-              <label for="descriptionTextArea" id="textAreaStyle"
-                >Defect Description</label
-              >
-              <textarea
-                class="form-control rounded-0"
-                id="descriptionTextArea"
-                rows="3"
-              ></textarea>
-            </div>
-          </div>
-          <div class="col-8">
-            <div class="md-form">
-              <label for="descriptionTextArea" id="textAreaStyle"
-                >Steps to Re-Create</label
-              >
-              <textarea
-                class="form-control rounded-0"
-                id="descriptionTextArea"
-                rows="3"
-              ></textarea>
-            </div>
-          </div>
-        </div>
+      <!-- Collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="row">
-          <div class="col-sm">
-            <div class="md-form">
-              <div
-                class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select"
-              >
-                <input
-                  class="mdl-textfield__input"
-                  type="text"
-                  id="defectType"
-                  value="Select Defect Type"
-                  readonly
-                  tabIndex="-1"
-                />
-                <label for="defectType" class="lblClass" style="top:90%">
-                  <i class="mdl-icon-toggle__label material-icons"
-                    >keyboard_arrow_down</i
-                  >
-                </label>
-                <label class="mdl-textfield__label">Defect Type</label>
-                <ul
-                  for="defectType"
-                  class="mdl-menu mdl-menu--bottom-left mdl-js-menu"
-                >
-                  <li class="mdl-menu__item">UI</li>
-                  <li class="mdl-menu__item">Functionality</li>
-                  <li class="mdl-menu__item">Enhancement</li>
-                  <li class="mdl-menu__item">Performance</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
 
-          <div class="col-sm">
-            <div class="md-form">
-              <div
-                class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select"
-              >
-                <input
-                  class="mdl-textfield__input"
-                  type="text"
-                  id="priority"
-                  value="Select Priority"
-                  readonly
-                  tabIndex="-1"
-                />
-                <label for="priority" class="lblClass" style="top:90%">
-                  <i class="mdl-icon-toggle__label material-icons"
-                    >keyboard_arrow_down</i
-                  >
-                </label>
-                <label class="mdl-textfield__label">Priority</label>
-                <ul
-                  for="priority"
-                  class="mdl-menu mdl-menu--bottom-left mdl-js-menu"
-                >
-                  <li class="mdl-menu__item">High</li>
-                  <li class="mdl-menu__item">Low</li>
-                  <li class="mdl-menu__item">Medium</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
 
-          <div class="col-sm">
-            <div class="md-form">
-              <div
-                class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select"
-              >
-                <input
-                  class="mdl-textfield__input"
-                  type="text"
-                  id="status"
-                  value="Select Status"
-                  readonly
-                  tabIndex="-1"
-                />
-                <label for="status" class="lblClass" style="top:90%">
-                  <i class="mdl-icon-toggle__label material-icons"
-                    >keyboard_arrow_down</i
-                  >
-                </label>
-                <label class="mdl-textfield__label">Status</label>
-                <ul
-                  for="status"
-                  class="mdl-menu mdl-menu--bottom-left mdl-js-menu"
-                >
-                  <li class="mdl-menu__item">New</li>
-                  <li class="mdl-menu__item">Open</li>
-                  <li class="mdl-menu__item">Fixed</li>
-                  <li class="mdl-menu__item">Closed</li>
-                  <li class="mdl-menu__item">Reopened</li>
-                  <li class="mdl-menu__item">Rejected</li>
-                  <li class="mdl-menu__item">deferred</li>
-                </ul>
-              </div>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
             </div>
-          </div>
-        </div>
+          </li>
 
-        <div class="row">
-          <div class="col-sm">
-            <div class="md-form">
-              <div
-                class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select"
-              >
-                <input
-                  class="mdl-textfield__input"
-                  type="text"
-                  id="assignedTo"
-                  value="Select Assigned Person"
-                  readonly
-                  tabIndex="-1"
-                />
-                <label for="assignedTo" class="lblClass" style="top:90%">
-                  <i class="mdl-icon-toggle__label material-icons"
-                    >keyboard_arrow_down</i
-                  >
-                </label>
-                <label class="mdl-textfield__label">Assigned Person</label>
-                <ul
-                  for="assignedTo"
-                  class="mdl-menu mdl-menu--bottom-left mdl-js-menu"
-                >
-                  <li class="mdl-menu__item">Person1</li>
-                  <li class="mdl-menu__item">Person2</li>
-                  <li class="mdl-menu__item">Person3</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="md-form">
-              <input type="text" id="inputAvailavleIn" class="form-control" />
-              <label for="inputAvailavleIn">Available In</label>
-            </div>
-          </div>
-        </div>
+        </ul>
+        <!-- Links -->
 
-        <div class="row">
-          <div class="col-lg">
-            <div class="md-form">
-              <label for="commentsTextArea" id="textAreaStyle"
-                >Comments..</label
-              >
-              <textarea
-                class="form-control rounded-0"
-                id="commentsTextArea"
-                rows="3"
-              ></textarea>
-            </div>
+        <form class="form-inline">
+          <div class="md-form my-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
           </div>
-        </div>
-
-        <div class="row butttonAlignRight">
-          <button class="btn btn-clear">
-            <i class="fas fa-magic mr-1"></i> Clear
-          </button>
-          <button class="btn btn-primary">
-            <i class="fa fa-paper-plane"></i> &nbsp; Submit
-          </button>
-        </div>
+        </form>
       </div>
-    </form>
+      <!-- Collapsible content -->
 
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col">
-          <canvas id="doughnutChart"></canvas>
-        </div>
-        <div class="col">
-          <canvas id="pieChart"></canvas>
-        </div>
-        <div class="col">
-          <a
-            class="btn btn-dark-green"
-            data-toggle="popover-hover"
-            data-img="//placehold.it/100x50"
-            >Hover over me</a
-          >
-        </div> 
-      </div>
-    </div>-->
+    </nav>
+    <!--/.Navbar-->
 
-    <!-- /Start your project here-->
+    <!-- Sidebar navigation -->
+    <div id="slide-out" class="side-nav fixed">
+      <ul class="custom-scrollbar">
+        <!-- Logo -->
+        <li>
+          <div class="logo-wrapper waves-light">
+            <a href="#"><img src="https://mdbootstrap.com/img/logo/mdb-transparent.png"
+                class="img-fluid flex-center"></a>
+          </div>
+        </li>
+        <!--/. Logo -->
+        <!--Social-->
+        <li>
+          <ul class="social">
+            <li><a href="#" class="icons-sm fb-ic"><i class="fab fa-facebook-f"> </i></a></li>
+            <li><a href="#" class="icons-sm pin-ic"><i class="fab fa-pinterest"> </i></a></li>
+            <li><a href="#" class="icons-sm gplus-ic"><i class="fab fa-google-plus-g"> </i></a></li>
+            <li><a href="#" class="icons-sm tw-ic"><i class="fab fa-twitter"> </i></a></li>
+          </ul>
+        </li>
+        <!--/Social-->
+        <!--Search Form-->
+        <li>
+          <form class="search-form" role="search">
+            <div class="form-group md-form mt-0 pt-1 waves-light">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+          </form>
+        </li>
+        <!--/.Search Form-->
+        <!-- Side navigation links -->
+        <li>
+          <ul class="collapsible collapsible-accordion">
+            <li><a class="collapsible-header waves-effect arrow-r"><i class="fas fa-chevron-right"></i>
+                Submit blog<i class="fas fa-angle-down rotate-icon"></i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="#" class="waves-effect">Submit listing</a>
+                  </li>
+                  <li><a href="#" class="waves-effect">Registration form</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="collapsible-header waves-effect arrow-r"><i class="far fa-hand-pointer"></i>
+                Instruction<i class="fas fa-angle-down rotate-icon"></i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="#" class="waves-effect">For bloggers</a>
+                  </li>
+                  <li><a href="#" class="waves-effect">For authors</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="collapsible-header waves-effect arrow-r"><i class="far fa-eye"></i> About<i
+                  class="fas fa-angle-down rotate-icon"></i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="#" class="waves-effect">Introduction</a>
+                  </li>
+                  <li><a href="#" class="waves-effect">Monthly meetings</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="collapsible-header waves-effect arrow-r"><i class="fas fa-envelope-o"></i> Contact
+                me<i class="fas fa-angle-down rotate-icon"></i></a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="#" class="waves-effect">FAQ</a>
+                  </li>
+                  <li><a href="#" class="waves-effect">Write a message</a>
+                  </li>
+                  <li><a href="#" class="waves-effect">FAQ</a>
+                  </li>
+                  <li><a href="#" class="waves-effect">Write a message</a>
+                  </li>
+                  <li><a href="#" class="waves-effect">FAQ</a>
+                  </li>
+                  <li><a href="#" class="waves-effect">Write a message</a>
+                  </li>
+                  <li><a href="#" class="waves-effect">FAQ</a>
+                  </li>
+                  <li><a href="#" class="waves-effect">Write a message</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <!--/. Side navigation links -->
+      </ul>
+      <div class="sidenav-bg rgba-blue-strong"></div>
+    </div>
+    <!--/. Sidebar navigation -->
 
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.js"></script>
+  </header>
+  <!--Main Navigation-->
 
-    <script type="text/javascript" src="js/main.js"></script>
-    <script src="mdbselect/material.min.js"></script>
-    <script src="mdbselect/getmdl-select.min.js"></script>
-  </body>
+  <!--Main layout-->
+  <main>
+
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer>
+
+  </footer>
+  <!--Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.js"></script>
+
+  <script>
+    // SideNav Button Initialization
+    $(".button-collapse").sideNav();
+    // SideNav Scrollbar Initialization
+    var sideNavScrollbar = document.querySelector('.custom-scrollbar');
+    Ps.initialize(sideNavScrollbar);
+  </script>
+
+</body>
+
 </html>
